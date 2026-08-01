@@ -1,8 +1,23 @@
 aid: salad-ventures
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/salad-ventures.png
 name: Salad Ventures
-description: 'Salad Ventures is a company surfaced as a portfolio company of multicoin-capital and added
-  to the API Evangelist network as a stub for enrichment. Sector: crypto-web3. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Salad Ventures is a crypto and web3 investment firm operating in the digital-asset,
+  blockchain, and web3 gaming ecosystem. It is tracked in the API Evangelist network as a portfolio
+  company of Multicoin Capital. As an investment and ecosystem firm rather than an API producer, Salad
+  Ventures exposes no public developer API, OpenAPI specification, SDK, or developer portal; its primary
+  web presence (salad.ventures) sits behind a Cloudflare challenge and publishes no machine-readable API
+  surface. This profile captures the firm''s identity and domain-security posture for the network.'
 url: https://raw.githubusercontent.com/api-evangelist/salad-ventures/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Crypto Web3
+- Venture Capital
+- Investment
+- Blockchain
+- Web3 Gaming
+- Digital Assets
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +43,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/salad-ventures-domain-security.yml
 - type: Website
   url: https://salad.ventures
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
